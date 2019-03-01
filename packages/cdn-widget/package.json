@@ -1,0 +1,35 @@
+{
+  "name": "zup-cora-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=prod rollup -c",
+    "start": "rollup -c -w",
+    "server": "python -m SimpleHTTPServer 8000",
+    "start:dev": "cross-env NODE_ENV=dev rollup -c -w",
+    "start:lab": "cross-env NODE_ENV=lab rollup -c -w",
+    "start:prod": "cross-env NODE_ENV=prod rollup -c -w"
+  },
+  "author": "Bruno Carneiro",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.1.0-1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-css-porter": "^0.1.2",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "rollup-watch": "^4.3.1"
+  }
+}

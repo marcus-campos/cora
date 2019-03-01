@@ -1,0 +1,105 @@
+#zupcora-toggle{
+  position: fixed;
+  right: 16pt;
+  bottom: 16pt;
+  z-index: 99999999;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  color: #246fc5;
+  width: 0px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#zupcora-toggle[initialized] {
+  width: 50px;
+  height: 50px;
+}
+
+#zupcora-toggle > iframe {
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+
+#zupcora-sdk-container {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 99999999;
+  position: fixed;
+  right: 68pt;
+  bottom: 16pt;
+  border-radius: 0.8em;
+  width: 450px;
+  height: 150px;
+  display: none;
+}
+
+#zupcora-sdk-container[active] {
+  display: block;
+}
+
+#zupcora-sdk-iframe-container {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+
+#zupcora-sdk-container[start] {
+  height: 450px;
+}
+
+#zupcora-sdk-container::after{
+  content: "";
+  position: fixed;
+  width: 0;
+  height: 0;
+  bottom: 12pt;
+  right: 56pt;
+  box-sizing: border-box;
+  border: 9px solid black;
+  border-color: transparent transparent #FFF #FFF;
+  transform-origin: 0 0;
+  transform: rotate(-135deg);
+  box-shadow: -1px 1px 0px 0 rgba(0, 0, 0, .03);
+}
+
+#zupcora-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#zupcora-sdk-container.increase-resize[active] {
+  height: 95%;
+  width: 50%;
+}
+
+#zupcora-sdk-container.increase-resize[active] {
+  height: 95%;
+  width: 50%;
+}
+
+#zupcora-sdk-iframe-container.increase-resize {
+  height: 100%;
+}
+
+#zupcora-iframe.increase-resize[active] {
+  height: 500px;
+  width: 900px;
+}

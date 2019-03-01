@@ -1,0 +1,29 @@
+{
+  "name": "corahq-monorepo",
+  "version": "3.4.0",
+  "description": "CORA",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corahq/cora.git"
+  },
+  "author": "CORA Team",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-push": ""
+    }
+  },
+  "devDependencies": {
+    "babel-plugin-transform-optional-chaining": "^7.0.0-beta.3",
+    "husky": "^1.0.0-rc.13",
+    "lerna": "^3.2.1"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}

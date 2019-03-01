@@ -1,0 +1,45 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Cora Embed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="http://widget.corahq.com/zupcora-sdk.min.css" rel="stylesheet" />
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-image: url("cora.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100% auto;
+    }
+
+  </style>
+</head>
+<body>
+<script src="http://widget.corahq.com/zupcora-sdk.min.js"></script>
+<script>
+  const identifier = "381440c0-3902-11e9-9dfd-2b7947317a2f"
+  const options = {
+    refreshSession: true,
+    customFields: {
+      customerName: 'Jonas',
+      securityToken: "kjraekreaJj43a4araetrj450"
+    }
+  }
+  zupcora.sdk.init(identifier, options)
+</script>
+</body>
+</html>

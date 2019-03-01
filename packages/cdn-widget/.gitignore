@@ -1,0 +1,9 @@
+node_modules
+coverage
+jest_0
+build/
+.DS_Store
+.env
+npm-debug.log
+tsconfig.json
+dist/

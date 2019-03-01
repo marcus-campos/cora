@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+*.log
+*.error
+jest_0
+syntax: glob
+*~
+jest_0
+coverage
+npm-debug.log
+node_modules/
+.tmp/
+coverage/
+.vscode
+yarn-error.log

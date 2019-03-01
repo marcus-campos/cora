@@ -1,0 +1,58 @@
+{
+  "name": "sdk-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback ",
+    "build": "NODE_ENV=production webpack --progress",
+    "test": "jest",
+    "stub": "nodemon stub"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "CORA",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "fingerprintjs": "^0.5.3",
+    "inobounce": "^0.1.6",
+    "lodash": "^4.17.10",
+    "preact": "^8.2.9",
+    "preact-compat": "^3.18.0",
+    "preact-context-provider": "^1.1.1",
+    "preact-router": "^2.6.1",
+    "proptypes": "^1.1.0",
+    "rxjs": "^6.3.3",
+    "styled-components": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-preact": "^0.2.0",
+    "eslint": "^4.19.1",
+    "hapi": "^16.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.1.0",
+    "jest-styled-components": "^5.0.1",
+    "joi": "^10.2.2",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

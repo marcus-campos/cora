@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Cora Embed</title>
+      <link href="../build/zupcora-sdk.min.css" rel="stylesheet" />
+      <style>
+        body {
+          background: blue;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- your page -->
+      <script src="../build/zupcora-sdk.min.js"></script>
+      <script>
+        const identifier = "a3ec5970-0222-11e9-88c4-87d01881da2c"
+        // custom field example - not required
+        const options = {
+          refreshSession: true,
+          customFields: {
+            customerName: 'Jonas',
+            securityToken: "kjraekreaJj43a4araetrj450"
+          }
+        }
+        zupcora.sdk.init(identifier, options)
+      </script>
+    </body>
+  </html>
+
