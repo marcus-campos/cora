@@ -20,7 +20,7 @@ export default class Footer extends Component {
         <StyledFooter>
           <StyledDivider />
           <StyledContainer >
-            <StyledMessageInput id="cora-input-message" name="message" placeholder="Message" />
+            <StyledMessageInput id="cora-input-message" name="message" placeholder="Digite aqui..." />
             <Button icon format="compact" className="button">
               <StyledIconSend />
             </Button>
